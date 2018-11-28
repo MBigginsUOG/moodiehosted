@@ -88,6 +88,7 @@ var svg = d3.select(id)
 				.call(xAxis) //.tickFormat(d3.timeFormat("%a %Y-%m-%d")))
 				.selectAll("text")
 	        .style("text-anchor", "end")
+					.style("font-size","22px")
 	        .attr("dx", "-.8em")
 	        .attr("dy", ".15em")
 	        .attr("transform", "rotate(-65)");
@@ -95,6 +96,7 @@ var svg = d3.select(id)
     // Add the Y Axis
     svg.append("g")
         .attr("class", "y axis")
+				.style("font-size","22px")
         .call(yAxis);
 
     // Add the valueline path.
