@@ -65,7 +65,7 @@
 
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="scatterLine.css">
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
 </head>
 
 <body>
@@ -202,8 +202,8 @@
                               <div class="past-day-statis" align="center">
                                   <h1>Calendar</h1>
                               </div>
-                              <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-                              <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                              <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+                              <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
                               <link rel="stylesheet" type="text/css" />
                               <div align="center">
@@ -441,7 +441,6 @@
               <button id="cleanButton" style="background-color:#00c292" class="btn btn-primary primary-icon-notika btn-reco-mg btn-button-mg "onclick="bigMood(this)">  <i class="material-icons">flare</i> Clean</button>
               <button id="friendsButton" style="background-color:#00c292" class="btn btn-primary primary-icon-notika btn-reco-mg btn-button-mg" onclick="bigMood(this)">  <i class="material-icons">people</i> Friends</button>
               <button id="dateButton" style="background-color:#00c292" class="btn btn-primary primary-icon-notika btn-reco-mg btn-button-mg" onclick="bigMood(this)">  <i class="material-icons">favorite</i> Date</button>
-              <br>Click on an activity to show or hide it from the graph
               <div align="center" id='scatterLineId'></div>
 
             </div>
@@ -451,7 +450,7 @@
             <div class="breadcomb-list" >
               <div align="center">
                 <h1>Moodie Cloud</h1>
-                Size indicate relative frequency and colour indicates how that activity contributed to your mood on average
+                Size indicate relative frequency and colour indicates how that activity contributed to your mood on average.
                 <img src="img/wordcloud.png"
               </div>
             </div>
@@ -460,7 +459,23 @@
       </div>
     </div>
 
+    <div class="sale-statistic-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                  <div class="sale-statistic-inner notika-shadow mg-tb-30">
+                    <div align="center" id='dailyMoodId'></div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                  <div class="sale-statistic-inner notika-shadow mg-tb-30">
 
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Start Footer area ---------------------------------------------->
@@ -574,6 +589,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="dashboard.js"></script>
     <script src="scatterLine.js"></script>
+    <script src="dailymood.js"></script>
     <script src="calendar.js"></script>
 
 </body>
